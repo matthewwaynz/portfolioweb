@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="porti styles.css">
+    
+</head>
+<body>
+            <!--Navbar-->
+            <nav class="navbar">
+                <h1 class="brand">portfolio</h1>
+                <div class="toggle-btn">
+                    <span></span>
+                    <span></span>
+                </div>
+          
+           <ul class="links-container">     
+                <li class="link-item"><a href="#" class="active link">Home</a></li>
+                <li class="link-item"><a href="#myprojects" class="link">Projects</a></li>
+                <li class="link-item"><a href="#about-me" class="link">About</a></li>
+                <li class="link-item"><a href="https://glory-atom-c90.notion.site/Java-Scanner-da5e72efaaab436b903d12318f66" class="link" target="_blank">Blog / Notes</a></li>
+                <li class="link-item"><a href="http://www.youtube.com/channel/UCxZ9OmGT6LlMAnAJWlffEbA" class="link">Tutorials </a></li>
+                <li class="link-item"><a href="#contact-section" class="link">Contact me</a></li>
+            </ul>    
+            </nav>
+        
+        
+            <section class="home">
+                <div class="hero-content">
+                    <h1 class="hero-heading"><span class="highlight">hey , </span>I am Matthew</h1>
+                    <p class="profession"> Front & Backend-end web development, Wordpress Web Dev ... </p>
+                    <p class="info"> A Student at MAKERERE UNIVERSITY BUSINESS SCHOOL </p>
+                    <a href="#contact-section" class="btn">contact me <span id="about-me"></span></a>
+                </div>
+            </section>
+            
+            <!-- about section -->
+<section class="about">
+    <h2 class="heading">about <span class="highlight">me</span></h2>
+    <p class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum natus atque rem consectetur accusamus. Expedita recusandae ut distinctio qui earum, iure pariatur quia alias, eaque eius praesentium quam at nobis.</p>
+    <div class="seperator"></div>
+
+    <div class="about-me-container">
+        <div class="left-col">
+            <img src="Images/2203549_admin_avatar_human_login_user_icon.png" class="about-image" alt=""
+            style="width: 330px;height: 400px;">
+        </div>
+        <div class="right-col">
+            <p class="about-para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae ducimus ab quo, odit dolore porro totam quidem libero excepturi ratione, obcaecati quam odio sequi reprehenderit laudantium, eum facere. Fuga, tenetur? </p>
+            <a href="#" target="_blank" class="btn">Adding CV Soon</a>
+        </div>
+    </div>
+</section>
+
+ 
+<section class="about" id="about-section"> 
+    <h2 class="heading">languages & Platforms</h2>
+     <div class="seperator"></div>
+     <div class="skill-container">
+        <div class="skill-card" style="--bg: #f06529">
+          <p class="skill">HTML</p>
+         </div>
+             <div class="skill-card" style="--bg: #379ad6">
+          <p class="skill">CSS</p>
+         </div>
+        <div class="skill-card" style="--bg: #4b3309">
+          <p class="skill">Java</p>
+      </div>
+      <div class="skill-card" style="--bg: #f7df1e">
+          <p class="skill">Wordpress </p>
+      </div>
+      <div class="skill-card large" style="--bg: #5ed9fb">
+          <p class="skill">Lorem ipsum dolor.</p>
+      </div>
+      <div class="skill-card large" style="--bg: #a10c63">
+          <p class="skill">lorem </p>
+      </div>
+      <div class="skill-card" style="--bg: #1d0809">
+          <p class="skill">Lorem</p>
+      </div>
+      <div class="skill-card" style="--bg: #ffa000">
+          <p class="skill">Lorem ipsum </p>
+      </div>
+      <div class="skill-card large" style="--bg: #5ed9fb">
+          <p  class="skill">And More...</p>
+      </div>
+    </div>
+</section>
+
+<!-- project section -->
+
+<span id="myprojects"></span>
+<h2 class="heading">Pr<span class="highlight">o</span>ject<span class="highlight">s</span></h2>
+<p class="sub-heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaq ror, sit odio.. </p>
+<div class="seperator"></div>
+<section id="projects">
+    <div class="project-tile">
+      <a href="#">Lorem</a>
+    </div>
+    <div class="project-tile">
+      <a href="#">Wordpress website</a>
+    </div>
+    <div class="project-tile">
+      <a href="#">Lorem Ipsum</a>
+    </div>
+  </section>
+
+                 
+<!-- contact form -->
+<section class="contact" id="contact-section">
+    <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+    <p class="sub-heading">Lets connect</p>
+    <div class="seperator"></div>
+
+    <form action="" method="post">
+    <input name="_gotcha" style="display: none" type="text">
+    <div class="contact-form">Full Name<input name="name" placeholder=" Full Name" id="name" required type="text">
+    </div>
+    <div class="contact-form">Topic<input name="topic" placeholder="topic" id="topic" required type="text">
+        </div>
+    <div class ="contact-form">E-mail
+    <input name="E-Mail Address" required placeholder="email" />
+        </div>
+    <textarea class="message" placeholder="message" required></textarea>
+    <br/>
+    <button class="btn contact-btn" style="cursor: pointer;" type="submit">contact me</button>
+    <input type="hidden" name="referrer" id="referrer_field" />
+
+    <input type="hidden" name="body" />
+
+</section>
+
+<a href="#" class="page-top">Top &#65085;</a>
+
+
+
+   <!-- Site footer -->
+   <footer class="footer"> Copyright © 2022 All Rights Reserved by Matthew. </footer>
+
+
+
+
+<script>
+    // links
+
+const links = document.querySelectorAll('.link');
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        links.forEach(ele => ele.classList.remove('active'));
+        link.classList.add('active');
+    })
+})
+//toggle button
+const toggleBtn = document.querySelector('.toggle-btn');
+const linkContainer = document.querySelector('.links-container');
+
+toggleBtn.addEventListener('click', () => {
+    toggleBtn.classList.toggle('active');
+    linkContainer.classList.toggle('show');
+})
+
+</script>               
+</body>
+</html>
